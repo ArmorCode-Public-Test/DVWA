@@ -11,7 +11,7 @@ $page[ 'page_id' ] = 'xss_s';
 $page[ 'help_button' ]   = 'xss_s';
 $page[ 'source_button' ] = 'xss_s';
 
-dvwaDatabaseConnect();
+
 
 if (array_key_exists ("btnClear", $_POST)) {
 	$query  = "TRUNCATE guestbook;";
@@ -85,3 +85,4 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
